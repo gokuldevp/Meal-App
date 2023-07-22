@@ -4,21 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meal Detail</title>
+  <link rel="shortcut icon" href="image/favicon.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <Nav>
-    <li>
-      <a href="index.html">Home</a>
-      <a href="my_favourite_meals.html">Favourites</a>
-    </li>
-  </Nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="index.html">
+        <img id="logo-img" src="image/logo.png" alt="Your Logo">
+      </a>
 
+      <!-- Navigation links -->
+      <div id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="my_favourite_meals.html">Favourites</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <br>
   <div class="container">
-    <h1>Meal Detail</h1>
     <div class="meal-details" id="mealDetails"></div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="meal_detail.js"></script>
 </body>
 

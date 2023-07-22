@@ -30,9 +30,9 @@ function displaySearchResults(meals) {
   const mealList = meals.map((meal) => {
     return `
       <li>
-        ${meal.strMeal}
-        <button onclick="addToFavorites('${meal.idMeal}')">Add to Favorites</button>
-        <a href="meal_detail.html?id=${meal.idMeal}" target="_blank">View Details</a>
+        <span>${meal.strMeal}</span>
+        <button class="fav-btn" onclick="addToFavorites('${meal.idMeal}')"><span class="fas fa-heart"></span></button>
+        <a class="details" href="meal_detail.html?id=${meal.idMeal}" ><i class="fa fa-book" aria-hidden="true"></i></a>
       </li>
     `;
   }).join('');

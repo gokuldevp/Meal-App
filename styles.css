@@ -1,0 +1,67 @@
+
+
+/* Navigation Bar */
+#logo-img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Search results */
+
+/* Style for Fav button */
+.fav-btn {
+    border: none;
+    background-color: white;
+}
+
+/* Creating Hovering effect for all buttons */
+.fav-btn:hover {
+    color: gold;
+}
+
+.details:hover{
+    color: green;
+}
+
+#remove-btn:hover {
+    color: red;
+}
+
+/* Style for the meal list */
+.meal-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for each list item */
+.meal-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add spacing between items */
+}
+
+/* Style for the meal name */
+.meal-list li span {
+    flex-grow: 1;
+    margin-right: 10px; /* Add spacing between the meal name and buttons/icons */
+}
+
+/* Style for the favorite button */
+.meal-list li .fav-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Style for the book icon link */
+.meal-list li a {
+    color: #000; /* Set the color for the link */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+
+/* Style ofr the Meal Details page */
+.card-text {
+    text-align: justify;
+}

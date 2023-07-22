@@ -3,8 +3,9 @@ function displayFavoriteMeals() {
   favoriteMealsList.innerHTML = favoriteMeals.map((meal) => {
     return `
       <li>
-        ${meal.strMeal}
-        <button onclick="removeFromFavorites('${meal.idMeal}')">Remove from Favorites</button>
+        <span>${meal.strMeal}</span>
+        <button class="fav-btn" id="remove-btn" onclick="removeFromFavorites('${meal.idMeal}')"><span class="fas fa-trash"></span></button>
+        <a class="details" href="meal_detail.html?id=${meal.idMeal}" ><i class="fa fa-book" aria-hidden="true"></i></a>
       </li>
     `;
   }).join('');
